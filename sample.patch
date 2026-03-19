@@ -1,0 +1,6 @@
+--- a/test.c
++++ b/test.c
+- strcpy(buffer, input);
+- printf(input);
++ strncpy(buffer, input, sizeof(buffer)-1);
++ printf("%s", input);
